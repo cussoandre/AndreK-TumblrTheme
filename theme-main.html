@@ -6,16 +6,16 @@
         {block:Description}
             <meta name="description" content="{MetaDescription}" />
         {/block:Description}
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <h1>{Title}</h1>
-
+        <h1 align="center" class="main_title">{Title}</h1>
         {block:Description}
             <p id="description">{Description}</p>
         {/block:Description}
 
         <ol id="posts">
-            {block:Posts}{block:Text}
+            {block:Posts}{block:Text} 
                     <li class="post text">
                         {block:Title}
                             <h3><a href="{Permalink}">{Title}</a></h3>
